@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_holder"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#35ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_nav_home_icon"
+                android:padding="14dp"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_nav_globe_icon"
+                android:padding="14dp"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_nav_message_icon"
+                android:padding="14dp"/>
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_nav_person_icon"
+                android:padding="14dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_holder"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            android:background="#282828">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:resize_mode="zoom"
+                android:animateLayoutChanges="true"
+                app:surface_type="texture_view"
+                app:controller_layout_id="@layout/player_view_controller"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp">
+
+        <LinearLayout
+            android:id="@+id/play_pause_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp">
+
+            <ImageView
+                android:id="@+id/play_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_play_icon"
+                android:padding="7dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/pause_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_pause_icon"
+                android:padding="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fullscreen_button_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="7dp"
+                app:srcCompat="@drawable/ic_fullscreen_icon" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

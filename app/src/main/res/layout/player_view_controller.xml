@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow_gradient_bottom_to_top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/exo_player_seek_bar_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7.8dp"
+            android:layout_marginRight="7.8dp"/>
+
+        <com.version.app.Classes.MySeekBar
+            android:id="@id/exo_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_height="6dp"
+            app:buffered_color="#b3ffffff"
+            app:unplayed_color="@android:color/transparent"
+            app:played_color="#fff"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
